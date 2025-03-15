@@ -1,0 +1,817 @@
+
+
+If Statement:
+
+The if statement is used to check condition. If the condition to true, the block of code the if statement is executed.
+
+else if statement:
+The else if statement is used when you have multiple conditions to check. It iss used to specify a new condition if the previous if or else if condition are false. It allows you to check multiple conditions sequentially.
+
+else statement:
+The else statement is optional and used to execute a block of code when all previous if and else if condtions are false.
+
+A nested if in java refers to using an if statement inside another if statement. This allows you to check multiple conditions in a hierarchical manner, where you perform more checks based in a previous condition being true.
+
+while loop: The condition is checked before executing the block of code. If the condition is false initially, the block of code will not be executed.
+
+
+do-while loop:
+
+The condition is checked after the block of code is executed,ehich means the code will always be executed at least once, even if the condition is false initially.
+ 
+The for loop in Java is a control flow statement used to repeatedly execute a block of code a specific number of times. It is often used when the number of
+iterations is known beforehand, such as when you want to loop through a range of numbers, array elements, or collections.
+
+In Java, the switch statement is a control flow statement that allows you to execute one out of multiple possible blocks of code based on the value of an
+expression.
+
+Break: Exits the loop or switch entirely
+When you want to stop the loop entirely
+Ends the loop.
+
+continue: Skips the current iteration of a loop and moves to the next one
+When you want to skip certain iterations based on a condition, but keep looping
+
+Skips the current iteration and continues to the next iteration of the loop
+
+/********************************************************************************************************************************************************************/
+What is JDK?
+JDK stands for Java development kit.
+It can compile, document, and package Java programs.
+It contains both JRE and development tools.
+
+What is JVM?
+JVM stands for Java virtual machine.
+It is an abstract machine that provides a run-time environment that allows programmers to execute Java bytecode.
+JVM follows specification, implementation, and runtime instance notations.
+
+What is JRE?
+JRE stands for Java runtime environment.
+JRE refers to a runtime environment that allows programmers to execute Java bytecode.
+JRE is a physical implementation of the JVM.
+
+/********************************************************************************************************************************************************************/
+Array:
+
+Array is a collection of elements of similar data type.
+Using single variable name with store multiple values.
+Fixed Size: Once an array is created, its size is fixed. It cannot resize it after creation
+Indexed: Array elements are stored in a contiguous memory location and accessed using an index. The index starts from 0.
+
+Types of Arrays in Java:
+
+Single-Dimensional Arrays: A one-dimensional array is a list of elements.
+Multi-Dimensional Arrays: A multi-dimensional array is an array of arrays. The most common multi-dimensional array is a two-dimensional array (like a matrix).
+
+Arrays.toString(): Converts the array to a string representation.
+Arrays.sort(): Sorts the array in ascending order.
+
+/********************************************************************************************************************************************************************/
+
+Functions or Methods:
+In Java, a function is a block of code that performs a specific task and can be called from other parts of the program. Functions are also known as methods in Java. They allow breaking code into smaller, reusable parts, making programs more modular, organized, and easier to maintain.
+
+void: The method does not return any value.
+(String name): The method takes one parameter (a string).
+
+Return Method: A return method is a method that performs a task and then returns a value to the caller. The return type of the method specifies the type of value that will be returned, such as int, String, Boolean, etc.
+
+Void Method: A void method is a method that does not return any value to the caller. The void keyword is used in place of a return type to indicate that the method does not return anything.
+
+/********************************************************************************************************************************************************************/
+
+ What is Function Overloading?
+
+Function overloading, also known as method overloading, is a programming feature that allows multiple functions to have the same name but with different parameters.
+
+/********************************************************************************************************************************************************************/
+
+What is the Constructor?
+
+* A constructor in Java is a special method that is used to initialize objects.
+* When an object of a class is created and is used to set initial values for the object's attributes.
+* Constructors have the same name as the class and do not have a return type.
+
+/********************************************************************************************************************************************************************/
+
+Types of constructor?
+
+Default constructor(No-Argument Constructor):
+
+* A default constructor is provided automatically by the java complier if no constructor is defined in the class. It does not take any parameters and initializes object fields with default values(e.g., 0 for numeric types, null for objects, false for booleans)
+
+Parameterized constructor:
+
+* A Parameterized constructor in java is a constructor that accepts one or more parameters,allowing the user to initialize objects with specificvalues.
+* A Parameterized constructor is a constructor that accepts arguments or parameters when an object is created. This gives you more control over the object initialization, as you can pass different values for different objects.
+
+/********************************************************************************************************************************************************************/
+
+constructor overloading:
+
+constructor overloading in java is a concept where a class has multiple constructors with the same name(the class name) but with different parameter lists. This is known as constructor overloading. It allows you to create objects with different ways,depending on the arguments,passed during object creation.
+
+/********************************************************************************************************************************************************************/
+
+This Keyword:
+The this keyword in Java is a reference variable that refers to the current object in a method or constructor
+The this keyword refers to the current object in a method or constructor
+This can be used to refer current class instance variable.
+Invoke current class constructor
+Invoke current class method
+Return the current class object
+Pass an argument in the method call
+Pass an argument in the constructor call
+
+/********************************************************************************************************************************************************************/
+Class And Object:
+Class:
+Java is an object-oriented programming language. The core concept of the object-oriented approach is to break complex problems into smaller objects.
+A class is a blueprint for the object. Before we create an object, we first need to define the class.
+
+/********************************************************************************************************************************************************************/
+Object:
+An object is any entity that has a state and behavior.
+An object is called an instance of a class.
+
+What is a Java object?
+
+An object is an instance of a class. The object has a state and behavior.
+Note: For example, Student is a class while a particular student named Ravi is an object.
+
+/********************************************************************************************************************************************************************/
+
+
+Inheritance:
+
+Inheritance is one of the four fundamental Object-Oriented Programming (OOP) concepts in Java, along with Encapsulation, Abstraction, and Polymorphism. In Java, Inheritance means creating new classes based on existing ones. In Java, it is possible to inherit attributes and methods from one class to another.
+
+subclass (child) - the class that inherits from another class
+superclass (parent) - the class being inherited from.
+
+/********************************************************************************************************************************************************************/
+
+Single inheritance:
+Single inheritance is when a class inherits from only one superclass. It's the most basic form of inheritance, where one class extends another class.
+
+Multilevel inheritance:
+Multilevel inheritance occurs when a class inherits from a class that is already a subclass of another class. In other words, a class can inherit from another subclass, creating a chain of inheritance.
+
+Hierarchical inheritance:
+Hierarchical inheritance occurs when multiple classes inherit from a single superclass. The superclass is shared among all the subclasses, and each subclass can inherit the same properties and methods from that common superclass.
+
+Hybrid inheritance:
+Hybrid inheritance is a combination of multiple types of inheritance, like Multiple inheritance and hierarchical inheritance.
+
+Multiple inheritance:
+Java does not support multiple inheritance directly through classes due to ambiguity issues (the "Diamond Problem"). However, multiple inheritance can be achieved using interfaces.
+
+/********************************************************************************************************************************************************************/
+
+Override:
+
+* Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass.
+* Method overriding occurs when a subclass has the same method as the super class.
+
+/********************************************************************************************************************************************************************/
+Super:
+* The super keyword in Java is used in subclasses to access superclass members (attributes, constructors and methods).
+* It is used to call superclass methods, and to access the superclass constructor.
+ 
+super(); // To call the constructor of the parent class
+super(name); // Call the constructor of the superclass (Animal)
+
+super.methodName(); // To call the parent class method
+super.sound(); // Call the sound method of the superclass (Animal)
+
+super.variableName; // To access the parent class variable
+System.out.println("Animal's name: " + super.name); // Access superclass variable
+
+/********************************************************************************************************************************************************************/
+Abstraction:
+
+Abstraction in Java is one of the fundamental concepts of object-oriented programming (OOP). It is the process of hiding the implementation details and showing only essential information to the user.
+
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+/********************************************************************************************************************************************************************/
+
+Encapsulation:
+
+Encapsulation in Java is one of the fundamental concepts of object-oriented programming (OOP).
+The meaning of Encapsulation is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+
+* declare class variables/attributes as private
+* provide public get and set methods to access and update the value of a private variable
+
+/*******************************************************************************************************************************************************************/
+
+Access Modifier:
+* Private: Only in the class defined not accessible anywhere else.
+* Public: Can be access Global (class Same Package, subclass same package, class different package and subclass different package).
+* Default: Cannot be accessed different package (access -> class same package, subclass same package).
+* Protected: Access -> class same package, subclass same package, subclass different package.
+
+
+/********************************************************************************************************************************************************************/
+
+Polymorphism:
+Polymorphism in Java is one of the fundamental concepts of object-oriented programming (OOP). Polymorphism allows to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word "poly" means many and "morphs" means forms, So it means many forms.
+
+Types of Java Polymorphism:
+
+* Compile-time Polymorphism (also known as Static Polymorphism) -> Compile-time polymorphism is achieved by method overloading and operator overloading (operator overloading is not supported directly in Java, but method overloading serves a similar purpose).
+* Runtime Polymorphism (also known as Dynamic Polymorphism) -> Runtime polymorphism is achieved by method overriding.
+
+/********************************************************************************************************************************************************************/
+
+Static:
+The static keyword in Java is used for memory management mainly. It can be applied with variables, methods, blocks, and nested classes. The static keyword is a non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.
+
+Static variables -> In Java, static variables (also known as class variables) are variables that are shared among all instances of a class. Static variables can be called directly with the help of the class only, without needing to create an object for the class.
+
+Static methods -> A static method in Java is a method that is part of a class, not an instance of that class. Static methods are defined using the static keyword and can access only other static members (variables, methods) of the class directly. This means it can be called without creating an object of the class.
+
+Static blocks -> A static block is a block of code that is executed once when the class is loaded into memory, before any instance of the class is created.
+
+Static nested classes -> A static class that is created inside another class is called a static nested class in Java. It cannot access non-static data members and methods but can be accessed by the outer class name.
+
+
+/********************************************************************************************************************************************************************/
+
+Final:
+The final keyword in Java is used to define constants, prevent method overriding, and prevent inheritance.
+It is applied to variables, methods, and classes, each with a different purpose. Once something is marked as final, its value or behavior cannot be changed or overridden. The final keyword in Java is a non-access modifier.
+
+final Variables: Once a variable is declared as final, its value cannot be changed after initialization.
+class Example {
+    final int constantValue = 100; // Final instance variable
+    void display() {
+        // constantValue = 200; // Error: cannot assign a value to a final variable
+        System.out.println(constantValue); // Output: 100
+    }
+}
+
+final Methods: A method declared as final cannot be overridden by any subclasses.
+final Classes: Classes marked as final cannot be extended or inherited.
+
+/********************************************************************************************************************************************************************/
+
+Interface:
+An interface is a fully abstract class. It includes a group of abstract methods (methods without a body). Interfaces cannot have constructors. All variables declared in an interface are implicitly public, static, and final. A class implements an interface using the implements keyword.
+interface Animal {
+    public void animalSound(); // interface method (does not have a body)
+    public void run(); // interface method (does not have a body)
+}
+
+
+/********************************************************************************************************************************************************************/
+
+Functional Interface:
+A functional interface in Java is an interface that has exactly one abstract method, and it may contain multiple default or static methods. 
+Functional interfaces are used primarily with lambda expressions and method references in Java.
+
+/********************************************************************************************************************************************************************/
+
+Threads:
+Threads allow a program to operate more efficiently by doing multiple things at the same time. Threads can be used to perform complicated tasks in the background without interrupting the main program. The basic unit of execution in Java. 
+
+A Thread is a very light-weighted process.
+
+Multithreading Java:
+Multithreading in Java is a process of executing multiple threads simultaneously. A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking. 
+
+Extending Thread class or implementing Runnable interface, method-> run() you specify the code that will be executed in that thread.
+
+/********************************************************************************************************************************************************************/
+
+The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that the normal flow of the application can be maintained.
+Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
+Types of Java Exceptions:
+*Checked Exception
+*Unchecked Exception
+*Error
+
+Checked Exceptions:
+Checked exceptions are the exceptions that are checked at compile-time.
+
+Examples: Examples of checked exceptions include IOException, SQLException, ParseException, etc.
+
+Unchecked exceptions:
+Unchecked exceptions, also known as runtime exceptions, are not checked at compile-time.
+
+Examples: Examples of unchecked exceptions include NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException, etc.
+
+
+Errors:
+Errors represent exceptional conditions that are not expected to be caught under normal circumstances.
+
+Examples: Examples of errors include OutOfMemoryError, StackOverflowError, NoClassDefFoundError, etc.
+
+Try:
+The try-catch block is used to handle exceptions in Java.
+An exception inside the try block means a try block cannot be used alone. The try block must be followed by either catch or finally.
+
+Catch:
+
+The "catch" block is used to handle the exception. it is caught by the catch block. The catch block cannot be used without the try block. It can be followed by finally block later.
+
+Finally:
+
+In Java, the finally block is always executed no matter whether there is an exception or not.
+
+The finally block is optional.
+
+Throw:
+
+The throw statement allows you to create a custom error.
+
+• The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FilelatFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc.
+
+Throws:
+
+Declares that a method might throw one or more exceptions, and the calling method is responsible for handling it.
+
+It doesn't throw an exception. It is always used with method signature.
+
+/********************************************************************************************************************************************************************/
+
+Custom Handling Exception:
+
+In Java, custom exception handling allows you to create your own exceptions to handle specific situations in your application.
+
+In Java, we can create our own exceptions that are derived classes of the Exception class.
+
+Using the custom exception, we can have your own exception and message. Here, we have passed a string to the constructor of superclass
+
+Creating our own Exception Lon is known nown as custom exception or user-defined exception.
+
+
+/********************************************************************************************************************************************************************/
+
+What is Regex:
+In Java, regex (short for regular expression) is a powerful tool used for pattern matching within strings. A regular expression is a sequence of characters that defines a search pattern. It's used for searching, matching, or manipulating strings based on specific patterns.
+
+Regex (Regular Expressions) in Java is a powerful tool used for searching, matching, and manipulating text strings based on specific patterns. It provides a concise and flexible way to match strings, check if a pattern exists in a string, replace or split text, and more.
+
+*   Pattern Class - Defines a pattern (to be used in a search)
+*   Matcher Class - Used to search for the pattern
+*   PatternSyntaxException Class - Indicates syntax error in a regular expression pattern
+
+/********************************************************************************************************************************************************************/
+
+Generic variables:
+Generic variables are a feature of generic programming, commonly used in Java, C#, and other statically-typed languages, that allow developers to write more flexible and reusable code. The concept revolves around parameterizing types so that a single piece of code can work with different data types, rather than being restricted to one specific type.
+
+private T value;
+
+/********************************************************************************************************************************************************************/
+
+What is String?
+
+Definition: String is a class in Java that represents a sequence of characters. Strings are immutable in Java, which means that once a String object is created, its value cannot be changed.
+
+Example:
+
+public class StringExample {
+
+public static void main(String[] args) { // Creating a String object
+
+String stri "Hello";
+
+// String objects can be concatenated
+
+String str2 stri+" World"; // Creates a new String object
+
+// Output the result
+
+System.out.println(str2); // Output: Hello World
+
+// Strings are immutable: original string 'stri' is unchanged 
+System.out.println(str1); // Output: Hello
+
+/********************************************************************************************************************************************************************/
+
+What is String Buffer?
+
+In Java, StringBuffer is a class used to create mutable sequences of characters. StringBuffer allows you to modify the contents of a string without creating new objects.
+Mutability: The contents of a StringBuffer can be modified. You can append, insert, delete, or reverse parts of the string without creating new objects.
+
+Example:
+ 
+
+public class StringBufferExample {
+    public static void main(String[] args) {
+        // Creating a StringBuffer object
+        StringBuffer sb = new StringBuffer("Hello");
+        // Appending to the StringBuffer
+        sb.append(" World");
+        System.out.println(sb); // Output: Hello World
+        // Inserting a string at a specific position
+        sb.insert(5, ",");
+        System.out.println(sb); // Output: Hello, World
+        // Deleting part of the StringBuffer
+        sb.delete(5, 6);
+        System.out.println(sb); // Output: Hello World
+        // Reversing the StringBuffer
+        sb.reverse();
+        System.out.println(sb); // Output: dirow olleh
+    }
+}
+
+/********************************************************************************************************************************************************************/
+
+What is StringBuilder?
+StringBuilder objects are mutable, meaning the contents of the object can be modified (e.g., appending, inserting, deleting characters) without creating new objects.
+
+In Java, StringBuilder is a class that provides a mutable sequence of characters, similar to StringBuffer. However, StringBuilder is specifically designed for single-threaded scenarios where thread safety is not a concern, making it faster than StringBuffer for operations on strings.
+
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        // Creating a StringBuilder object
+        StringBuilder sb = new StringBuilder("Hello");
+        // Appending to the StringBuilder
+        sb.append(" World");
+        System.out.println(sb); // Output: Hello World
+        // Inserting a string at a specific position
+        sb.insert(5, ",");
+        System.out.println(sb); // Output: Hello, World
+        // Deleting part of the StringBuilder
+        sb.delete(5, 6);
+        System.out.println(sb); // Output: Hello World
+        // Reversing the StringBuilder
+        sb.reverse();
+        System.out.println(sb); // Output: dlrow olleh
+        // Converting StringBuilder to String
+        String str = sb.toString();
+        System.out.println(str); // Output: dlrow olleh
+    }
+}
+
+/********************************************************************************************************************************************************************/
+
+Collection Frameworks:
+
+ArrayList:
+
+* In Java, ArrayList is a class in the Collection Framework that implements the List interface. ArrayLists are also known as dynamic arrays, you don't have to worry about the size of the array when you add or remove elements. Unlike arrays, the size of an ArrayList is not fixed, and elements can be added or removed during runtime.
+* ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases.
+
+Key Features of ArrayList:
+
+1. Dynamic Size
+2. Indexed Access
+3. Allows Duplicates
+4. Ordered
+5. Resizable
+6. Implementation of List Interface -> List interface, meaning it supports various operations such as adding, removing, or retrieving elements by Index
+7. Not Synchronized -> ArrayList is not thread-safe.
+8. Performance
+
+/********************************************************************************************************************************************************************/
+ 
+LinkedList:
+
+In Java, LinkedList is a class that implements the List and Deque interfaces, part of the Collection Framework. LinkedList uses a doubly-linked list structure, where each element (node) contains a reference to both the previous and next elements in the list
+
+ 
+Key Features of LinkedList:
+
+1. Doubly Linked List (A reference to the previous node and next node).
+
+2. Allows Duplicates
+
+3. Order of Elements
+
+4. Dynamic Size
+
+5. Performance
+
+6. Not Synchronized
+
+7. Implements List and Deque
+
+/********************************************************************************************************************************************************************/
+List Interface:
+
+Java, the List interface is part of the Collection Framework, located in the java. util package. It represents an ordered collection (also known as a sequence) of elements, where duplicates are allowed, and the order in which elements are inserted is maintained. The List interface extends the Collection interface, providing additional methods for handling indexed elements in a list.
+
+/********************************************************************************************************************************************************************/
+
+What is a Set in Java?
+
+In Java, a Set is a collection that does not allow duplicate elements. It is a part of the Java Collections Framework and extends the Collection interface. The Set interface is specifically designed to model mathematical sets, where elements are unique and unordered
+
+/********************************************************************************************************************************************************************/
+
+Hashset:
+* In Java, HashSet is a Set implementation that is part of the Collection Framework. It is used to store the unique elements and it doesn't maintain any specific order of elements.
+
+Key Features of HashSet:
+1. Unique Elements
+2. Unordered Collection
+3. Fast Operations
+4. Null Elements
+5. Not Synchronized
+6. Implements the Set Interface
+7. Backing Data Structure
+
+/********************************************************************************************************************************************************************/
+
+LinkedHashSet:
+1. Stores unique elements only.
+2. Maintains insertion order.
+3. Provides faster iteration compared to HashSet.
+4. Allows null elements.
+
+Key Features of LinkedHashSet:
+1. Maintains Insertion Order
+2. No Duplicates
+3. Faster Than TreeSet
+4. Null Elements
+5. Not Synchronized
+6. Inherits from HashSet
+
+/********************************************************************************************************************************************************************/
+
+TreeSet:
+In Java, TreeSet is a part of the Collection Framework and is a Set implementation that is based on a Red-Black tree. The ordering of the elements is maintained by a set using their natural ordering whether or not an explicit comparator is provided.
+Red-Black tree -> maintaining the sorting element
+Key Features of TreeSet:
+ 1. Sorted Order
+ 2. No Duplicates
+ 3. Navigable Operations -> (e.g., getting the first or last element, or the closest element to a given value).
+ 4. Does Not Allow Null Elements
+ 5. Efficient Operations
+ 6. Ordered Set
+ 7. Thread-Safety -> TreeSet is not thread-safe.
+
+/********************************************************************************************************************************************************************/
+
+Queue Interface:
+The Queue interface is used to model a FIFO (First-In-First-Out) data structure.
+It stores and processes the data in FIFO(First In First Out) order. It is an ordered list of objects limited to inserting elements at the end of the list and deleting elements from the start of the list.
+Key Characteristics of the Queue Interface:
+ 1. FIFO Behavior
+ 2. Insertion and Removal
+ 3. Interfaces and Implementations -> LinkedList, PriorityQueue, ArrayDeque, etc.
+ 4. Supports Optional Operations
+````````
+/********************************************************************************************************************************************************************/
+
+PriorityQueue:
+* In Java, the PriorityQueue is a class that implements the Queue interface.
+* Unlike a regular queue, which follows the First-In-First-Out (FIFO) order, a PriorityQueue orders its elements based on their natural ordering or a custom comparator (provided at the time of creation).
+
+Key Characteristics of PriorityQueue:
+1. Ordered by Priority
+2. Heap-based Implementation
+3. No Capacity Limitation
+4. Does not Allow null Elements
+5. Non-thread-safe
+6. No Guarantees on Element Order
+
+/********************************************************************************************************************************************************************/
+
+Maps:
+
+In Java, elements of Map are stored in key/value pairs. Keys are unique values associated with individual values.
+A map cannot contain duplicate keys. And, each key is associated with a single value.
+
+The Map stores data in the form of key-value pairs. The key is unique, but the values can be duplicated. Each key is associated with exactly one value.
+
+
+Key Characteristics of the Map Interface:
+
+Key-Value Pair
+No Duplicate Keys
+Efficient Lookups
+Not Part of the Collection Interface
+
+left side key - 1st
+right side value - 2nd
+
+Null:
+key - only one null edukum
+value - multiple null edukum
+
+/********************************************************************************************************************************************************************/
+
+HashMap:
+Java HashMap class implements the Map interface which allows storing key and value pairs, where keys should be unique. If trying to insert a duplicate key, it will replace the element of the corresponding key.
+
+Key Characteristics of HashMap:
+Java HashMap contains values based on the key.
+Java HashMap contains only unique keys.
+Java HashMap may have one null key and multiple null values.
+Java HashMap is non-synchronized.
+Java HashMap maintains no order.
+
+/********************************************************************************************************************************************************************/
+
+LinkedHashMap:
+
+LinkedHashMap in Java implements the Map interface of the Collections Framework. It stores key-value pairs while maintaining the insertion order of the entries. It maintains the order in which elements are added.
+
+Stores unique key-value pairs.
+Maintains insertion order.
+Allows one null key and multiple null values.
+Fast performance for basic operations.
+
+/********************************************************************************************************************************************************************/
+
+TreeMap:
+
+The TreeMap in Java is used to implement the Map interface and NavigableMap. The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used. This proves to be an efficient way of sorting and storing the key-value pairs. The storing order is maintained by the TreeMap.
+
+/********************************************************************************************************************************************************************/
+ 
+Iterator interface:
+
+The Iterator interface of the Java collections framework allows us to access elements of a collection. It has a subinterface ListIterator.
+
+How Does Synchronization Work?
+
+Synchronization ensures that only one thread at a time can execute a particular section of code. It is done by using the synchronized keyword in Java.
+
+concurrent:
+
+Concurrent collection in Java refers to a set of classes that allow multiple threads to access and modify a collection concurrently, without the need for explicit synchronization.
+
+/********************************************************************************************************************************************************************/
+
+ Java Stream 8:
+
+1. Lambda Expressions
+
+2. Method Reference
+
+3. Functional Interface
+
+4. Stream API
+
+5. Default Methods in Interface
+
+6. Static Methods in Interface
+
+7. Optional Class
+
+8. Nashorn JavaScript Engine
+
+Creating Streams
+
+From Collections (List, Set, etc.) using stream() method.
+
+From Arrays using Arrays.stream ().
+
+Using Stream.of() to create a stream from individual elements.
+
+Using Stream.generate() and Stream.iterate() for infinite streams.
+
+
+/********************************************************************************************************************************************************************/
+
+Lambda Expressions:
+
+A lambda expression is a new feature introduced in Java & that allows you to write more concise and expressive code, particularly when working with functional interfaces.
+
+Lambda expressions are primarily used to define the behavior of functional interfaces, which are interfaces with a single abstract method (also known as SAN interfaces).
+ 
+/********************************************************************************************************************************************************************/
+
+Default Methods in Interface:
+
+In Java 8, default methods were introduced in interfaces to allow developers to add method implementations directly in interfaces. Before Java B, interfaces could only have abstract methods (methods without implementation), but with the introduction of default methods, interfaces can nou have both abstract methods and concrete (implemented) methods.
+
+In Java, default methods are a feature introduced in Java 8 that allow you to define methods with a body inside interfaces. This was added to support backward compatibility, allowing you to add new methods to interfaces without breaking the implementing classes.
+
+note: allowing you to add new methods to interfaces without breaking the implementing classes.
+
+A default method in an interface can have an implementation, which means that a class implementing the interface doesn't have to implement that sethod unless it needs to override it.
+
+Default methods allow you to define methods in an interface with a body (i.e., implementation). Before Java 8, interfaces could only declare methods (abstract methods), leaving the implementation to the classes that implemented the interface. With default sethods, interfaces can now provide method implementations directly.
+
+/********************************************************************************************************************************************************************/
+
+Static Methods in Interface:
+
+
+Static Methods in Interface are those methods, which are defined in the interface with the keyword static. Unlike other methods in Interface, these static methods contain the complete definition of the function and since the overridden or changed in the implementation class. definition is and the method is static, therefore these methods complete cannot be overridden  or changed in the implementation class
+
+/********************************************************************************************************************************************************************/
+
+what is Stream API?
+
+Stream API is used to process collections of objects. A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result. It provides a concise and expressive way to perform various operations on data, such as filtering, mapping, reducing, and collecting.
+
+The Stream API in Java, introduced in Java 8, is a powerful feature that allows you to process sequences of elements (such as collections) in a functional style. It provides a high-level abstraction to manipulate collections, arrays, and other data structures in a more declarative and readable way, making the code more concise and expressive.
+
+/********************************************************************************************************************************************************************/
+
+
+Stream Operations:
+
+Intermediate Operations (Lazy operations):
+
+filter(): Filters elements based on a predicate. (or) Filters elements based on a specified condition.
+
+map(): Transforms elements using a function.
+
+flatMap(): Flattens nested collections into a single stream.
+
+distinct(): Removes duplicate elements.
+
+sorted(): Sorts elements in natural order or with a comparator.
+
+peek(): Allows a non-interfering action on the elements
+
+. limit() and skip(): Limit or skip elements in the stream.
+
+mapToInt(), mapToDouble(), mapToLong(): Convert to primitive streams
+
+/********************************************************************************************************************************************************************/
+
+Terminal Operations (Eager operations):
+
+forEach(): Performs an action for each element.
+
+collect(): Collects the elements into a collection, e.g., List, Set, etc. (or) It is used to return the result of the intermediate operations performed an on the stream
+
+reduce(): Reduces the stream to a single value using an accumulator function.
+
+count(): Counts the number of elements.
+
+anyMatch(), allMatch(), noneMatch(): Match operations.
+
+findFirst() and findAny(): Returns the first element or any element.
+
+min() and max(): Find the minimum or maximus element based on a comparator.
+
+/********************************************************************************************************************************************************************/
+
+Short Circuit Operations:
+
+Short-circuiting operations like anyMatch(), findFirst(), etc.
+
+Collectors Class: Collectors class simplifies the process of collecting the results of a stream into different data structures, performing aggregation,
+
+gathering statistical data.
+
+toList(): Collects the elements into a List.
+
+toSet(): Collects elements into a Set.
+
+joining(): Concatenates stream elements into a single string.
+
+groupingBy(): Groups elements by a classifier function.
+
+partitioningBy(): Partitions the stream into two groups based on a predicate.
+
+summarizingint(), summarizingDouble(), summarizingLong(): Collects statistics. reducing(): Performs a reduction on the stream elements.
+
+/********************************************************************************************************************************************************************/
+ 
+What are Parallel Streams?
+
+Parallel Streams in Java are a feature introduced in Java 8 that allow you to process elements of a stream in parallel across multiple threads. The main purpose of parallel streams is to improve performance for processing large datasets by leveraging multiple CPU cores.
+
+sequential(): Converts a parallel stream back to a sequential one.
+Parallel stream performance considerations and best practices.
+
+/********************************************************************************************************************************************************************/
+
+optional class:
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************************/
+
+ctrl +i align program
+
+ctrl+ Por/ command
+
+ctrl shiftt find by class
+
+/********************************************************************************************************************************************************************/
+
+
+In the us based on airlines,  The project aimed at building a web-based solution for managing flight bookings, reservations, and related operations for an airline company. It involved integrating several modules like flight management, booking, payments, user authentication, and reporting, all built using Spring Boot, Spring Data JPA, Spring Security, and RESTful APIs.The core components included flight scheduling, ticket booking, user management, and payment processing.
+Developed an Airlines Client Manage System using Java and Spring Boot, allowing clients to search, book, and manage flight reservations while providing administrative tools for flight scheduling and client management.
+Implemented secure user authentication and authorization using Spring Security, enabling different roles for clients, admins, and customer service representatives, 
+Designed and implemented RESTful APIs for flight search, seat booking, client profile management, booking history, and transaction processing using Spring Web, Spring Data JPA, and Hibernate ORM.
+
+
+
+
+
+
+In Java Spring Boot, a "dispatcher" refers to the DispatcherServlet, which acts as the central "front controller" that receives all incoming HTTP requests and directs them to the appropriate controller based on URL mapping,
